@@ -6,9 +6,9 @@
 $gray-medium-light: #eaeaea;
 
 @mixin box_sizing {
-  -moz-box-sizing:    border-box;
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing:         border-box;
+  box-sizing: border-box;
 }
 
 /* universal */
@@ -114,6 +114,7 @@ footer {
     }
   }
 }
+
 @media (max-width: 800px) {
   footer {
     small {
@@ -121,9 +122,11 @@ footer {
       float: none;
       margin-bottom: 1em;
     }
+
     ul {
       float: none;
       padding: 0;
+
       li {
         float: none;
         margin-left: 0;
@@ -184,7 +187,8 @@ aside {
 
 /* forms */
 
-input, textarea {
+input,
+textarea {
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
@@ -197,6 +201,7 @@ input {
 
 #error_explanation {
   color: red;
+
   ul {
     color: red;
     margin: 0 0 30px 0;
@@ -205,9 +210,25 @@ input {
 
 .field_with_errors {
   @extend .has-error;
+
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
 }
 
 /* Dropdown menu */
